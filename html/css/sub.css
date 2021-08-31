@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* 헤더 변경 */
+#header { height: 160px; }
+#header h1 { padding: 77px 0 0 50px; }
+#gnb { top: 93px; }
+/* 서브본문 */
+#container {  }
+#subHeader { height: 300px; margin: 0 auto; background: no-repeat center / cover; }
+/*다른 서브페이지와 다른 사진을 사용하기 때문에 클래스명을 다르게 */
+#subHeader h2 { text-align: center; text-transform: uppercase; line-height: 300px;  font-size: 60px; font-weight: normal; color: #fff; text-shadow: 0 1px 1px #000; }
+/* subWrap */
+#subWrap { width: 1000px; margin: 30px auto 0; }
+#subWrap::after { content: ""; clear: both; display: block; }
+/* 서브메뉴 */
+#snb { float: left; width:250px; text-transform: uppercase; }
+#snb h3 { height: 95px; margin-bottom: 15px; background: rgb(77, 75, 75); font-size: 30px; color: #fff; text-align: center; line-height: 95px; font-weight: normal; }
+#snb ul li a { display:block; height: 50px;
+    border-bottom: 1px dotted #333;
+    line-height: 50px;
+    text-indent: 22px;
+    color: #333; font-size: 20px; /*padding-left: 16px; */
+    background: url(../images/bulletSnb.png) 229px center no-repeat; }
+#snb ul li a:hover { color: #ff8b24;
+    border-bottom-color: #ff8b24;
+    background-image: url(../images/bulletSnbOver.png); }
+/* 서브본문 */
+#subContent { float: right; width: 710px; }
+#subContent h3 { color: #f6e380;
+    /* font-size: 40px; 
+    font-weight: normal; 
+    font-family: 'Times New Roman', Times, serif;  */
+     font: 40px 'Times New Roman', Times, serif; }
+figure { float: right; margin: 0 0 15px 10px; 
+    text-align: center; }
+figure figcaption { color: #4299fd; }
+figure p { padding-bottom: 15px;
+    /* 넓이 값이 적용되지 않았기 때문에 padding 값을 적용해도 크기가 변하지 않았다. */
+    text-align: justify; }
+/* 서브페이지 개별 */
+/* compant_welcome */
+#subHeader.subHeaderCompany { background-image: url(../images/subTitleCompany.jpg); }
+/* customercenter_notice */
+#snb .snbTitleCustomer { padding-top: 10px;
+box-sizing: border-box; line-height:  1.2em; }
+#subHeader.subHeaderCustomer { background-image: url(../images/subTitleCustomer.jpg); }
+.subContentCompany { padding: 0 45px 0 20px; }
+#notice { width: 660px; }
+#notice thead { height: 30px; }
+#notice thead th { height: 30px;
+    text-transform: capitalize;
+    font-weight: normal; color: #fff;
+    
+    background: linear-gradient(180deg, #6dbaf2 0%, #246fd2 100%); }
+#notice thead th.no { width: 56px; border-radius: 5px 0 0 5px; }
+#notice thead th.title { width: 376px; letter-spacing: 0.5em; }
+#notice thead th.write { width: 100px; }
+#notice thead th.date { width: 72px; }
+#notice thead th.read { width: 56px; border-radius: 0 5px 5px 0; }
+#notice tbody td { padding: 5px 0; text-align: center;
+border-bottom: 1px solid #ccc; }
+#notice tbody td:nth-child(2) { text-align: left; }
+#notice tbody div { width: 376px;
+    /* 넓이값이 반드시 들어가야 한다. */ 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+#noticeSearch { margin: 16px 45px 35px 0 ; text-align: right; /* 적용할 요소(폼요소)의 부모인 요소에 적용 */  }
+#noticeSearch input { border: 1px solid #333; border-radius: 10px; }
+#noticeSearch fieldset #searchBox { width: 200px; height: 20px;
+text-indent: 10px; }
+#noticeSearch fieldset #searchBtn { width: 88px; height: 22px; /* 보더를 포함한 값을 주어야 한다.*/
+     background: linear-gradient(180deg, #6dbaf2 0%, #246fd2 100%); color: #fff; }
+ /* 페이지 번호 */
+#pages { margin-right: 45px; text-align: center; }
+#pages a { margin: 0 13px; color: #333; }
