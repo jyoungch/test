@@ -12,7 +12,7 @@ body { font-family: 'Noto Sans KR', sans-serif; }
 body { background: linear-gradient(180deg, #9ccaf0 0, #fff 100%) no-repeat; }
 #wrap { width: 960px; margin: 8px auto 0; border: 1px solid #fff; background: #fff; }
 /* 헤더 */
-#header {  height: 279px; background: url(../images/bg_header.png) no-repeat; }
+#header {  height: 279px; background: url(../images/bg_header.png) no-repeat center / cover; }
 #header h1 { padding: 25px 0 0 20px; font-size: 70px;  color: #ffff1e; }
 /* gnb */
 #gnb { height: 60px; }
@@ -31,8 +31,8 @@ main { width: 740px; float: left; }
 
 /* 600-1023 */
 @media all and (max-width: 1023px ) {
-    #wrap { width: 580px; }
-    main { width: auto; float: none; padding: 0 30px; }
+    #wrap { margin: 0; width: 100%; border: 0; }
+    main { width: auto; float: none;  }
     /* maind의 width값으로 100%를 주게 되면 패딩값을 포함하게 된다. auto를 주면 패딩을 뺀 나머지 값만 적용된다. */
     #photos { width: auto; float: none; }
     #photos img { width: 176px; }
@@ -40,7 +40,6 @@ main { width: 740px; float: left; }
 
 /* 599이하 */
 @media all and ( max-width: 599px ) {
-    #wrap { width: 100%; margin: 0; border: 0; }
     #header { height: 75px; background: #061f1f; }
     #header h1 { padding: 10px 0 0 10px; font-size: 30px; }
     #gnb { height: auto; padding: 14px 20px 0; }
