@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* 초기화 */
+body, h1, h2, h3, h4, ul, li, a, p, hr { margin: 0; padding: 0; }
+ul li { list-style: none; }
+ul li a { text-decoration: none; color: #000; }
+hr { display: none; }
+.hidden { position: absolute; left: -9999px; }
+/* 웹폰트 */
+body { font-family: 'Noto Sans KR', sans-serif; }
+/* 공통 */
+body { background: #adddf1; }
+/* 헤더 */
+#header { position: relative; margin: 7px auto 0; width: 967px; height: 300px; background: url(../images/bg_header.png) no-repeat; }
+#header h1 { position: absolute; top: 20px; left: 30px; }
+#header h1 a { font-size: 70px; font-weight: bold; color: #ffff1e; }
+/* gnb */
+#gnb { margin: -17px auto 0; width: 967px; height: 60px; }
+#gnb ul li a { float: left; display: block; width: 25%;  text-align: center; line-height: 60px; background: #006600; color:#fff; }
+#gnb ul li a:hover { background-color: #004000; }
+/* content */
+main { margin: 0 auto; width: 650px; }
+#content {  background: #fff; }
+#content article { }
+#content article h4 { }
+/* aside */
+#photos { overflow:hidden; }
+#photos div { float: right; padding-top: 10px;
+    background: #ddffdd; }
+#photos img { display: block; margin: 10px; }
+/* footer */
+#footerWrap { width: 967px; height: 70px; position: relative; text-align: center; background: #061f1f; color: #fff; }
+#footer {     }
+#footer p {  }
+#footer small {  }

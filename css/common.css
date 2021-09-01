@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* 초기화 */
+body, h1, h2, h3, h4, ul, li, a, p, hr { margin: 0; padding: 0; }
+ul li { list-style: none; }
+ul li a { text-decoration: none; color: #000; }
+hr { display: none; }
+.hidden { position: absolute; left: -9999px; }
+/* 웹폰트 */
+body { font-family: 'Noto Sans KR', sans-serif; }
+/* 공통 */
+body { background: linear-gradient(180deg, #9ccaf0 0, #fff 100%) no-repeat; }
+#wrap { width: 960px; margin: 8px auto 0; border: 1px solid #fff; background: #fff; }
+/* 헤더 */
+#header {  height: 279px; background: url(../images/bg_header.png) no-repeat center / cover; }
+#header h1 { padding: 25px 0 0 20px; font-size: 70px;  color: #ffff1e; }
+/* gnb */
+#gnb { height: 60px; }
+#gnb ul li { width: 25%; float: left; }
+#gnb ul li a { display: block;  text-align: center; line-height: 60px; background: #006600; color:#fff; }
+/* content */
+main { width: 740px; float: left; }
+#content { padding: 30px 20px; }
+#content h3 { margin: 20px 0; }
+#content p { margin-bottom: 10px; font-size: 14px; }
+/* aside */
+#photos { width: 220px; float: right; padding: 20px 0; text-align: center;
+        background: #ddffdd; }
+#photos img { border: 1px solid #ccc; }
+#footer { clear: both; padding: 20px 0; text-align: center; background: #061f1f; color: #fff; }
+
+/* 600-1023 */
+@media all and (max-width: 1023px ) {
+    #wrap { margin: 0; width: 100%; border: 0; }
+    main { width: auto; float: none;  }
+    /* maind의 width값으로 100%를 주게 되면 패딩값을 포함하게 된다. auto를 주면 패딩을 뺀 나머지 값만 적용된다. */
+    #photos { width: auto; float: none; }
+    #photos img { width: 176px; }
+}
+
+/* 599이하 */
+@media all and ( max-width: 599px ) {
+    #header { height: 75px; background: #061f1f; }
+    #header h1 { padding: 10px 0 0 10px; font-size: 30px; }
+    #gnb { height: auto; padding: 14px 20px 0; }
+    #gnb ul li { width: auto; float:none; margin-bottom: 10px; }
+    #gnb ul li a { border-radius: 10px; background: #fff; border: 1px solid #d5d5d5; color: #000; }
+    #photos { background: #fff; }
+    #photos img { width: 90%; }
+}
+}
+
+/* line-height는 값에 px을 적지 않아도 적용된다. 부모요소의 값을 따르는 것이 아니라 기본 크기(16px)의 배수로 적용되기 때문.  */
