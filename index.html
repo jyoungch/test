@@ -15,7 +15,7 @@
                 <ul id="main">
                     <li><a href="#">해피치즈스마일</a>
                         <ul>
-                            <li><a href="">브랜드 소개</a></li>
+                            <li><a href="">브랜드소개</a></li>
                             <li><a href="">대표인사</a></li>
                             <li><a href="">연혁&수상</a></li>
                             <li><a href="">찾아오시는 길</a></li>
@@ -29,9 +29,9 @@
                             <li><a href="#">기타</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">창업문의</a>
+                    <li><a href="#">가맹문의</a>
                         <ul>
-                            <li><a href="#">브랜드 소개</a></li>
+                            <li><a href="#">브랜드경쟁력</a></li>
                             <li><a href="#">창업안내</a></li>
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">상담신청</a></li>
@@ -54,14 +54,13 @@
                 </ul>
             </nav>
         </div>
-        
     </header>
     <main>
         <div id="sliderWrap">
             <ul id="sliderList">
-                <li class="slider1"></li>
-                <li class="slider2"></li>
-                <li class="slider3"></li>
+                <li class="slider slider1"></li>
+                <li class="slider slider2"></li>
+                <li class="slider slider3"></li>
             </ul>
             <div id="posBtn">
                 <a href="#" class="prev"></a>
@@ -75,56 +74,57 @@
         </div>
         <section id="content1">
             <h2 class="hidden">메뉴</h2>
-            <article id="menuWrap">
-                <div id="new">새로운 메뉴</div>
-                <ul id="menu">
-                    <li><p>인기메뉴</p></li>
-                    <li><p>배달/포장</p></li>
-                    <li><a href="#"><p>전체메뉴소개</p></a></li>
-                </ul>
-            </article>
-        </section>
-        <section id="customer">
-            <h2 class="hidden">고객센터</h2>
-            <div id="cusWrap">
-                <div id="notice">
-                    <p>notice</p>
-                    <a href="#">더보기</a>
-                </div>
-                <div id="inquiry">
-                    <p>고객의 소리</p>
-                    <a href="#">더보기</a>
-                </div>
-                <div id="d">
-                    <p>sns</p>
-                    <a href="#">더보기</a>
-                </div>
+            <div id="menuWrap">   
+                <dl id="menu">
+                    <dt class="menu1"></dt>
+                    <dt class="menu2">HOT!</dt>
+                    <dd><a href="#">전체메뉴보기</a></dd>
+                    
+                </dl>     
             </div>
         </section>
-        <section id="brand">
-            <h2 class="hidden">브랜드</h2>
-            <article id="brWrap">
+        <div class="order"><a href="#">배달포장</a></div>
+        <section id="franchise">
+            <h2 class="hidden">가맹문의</h2>
+            <div id="frWrap">
                 <p>hcs</p>
-                <div id="brStory">
-                    <a href="#">
-                        <p>브랜드 스토리</p>
-                    </a>
-                </div>
-                <div id="franchise">
-                    <a href="#">
-                        <p>가맹문의</p>
-                    </a>
-                </div>
-            </article>
+                <dl id="brStory">
+                    <dt><a href="#">브랜드경쟁력</a></dt>
+                </dl>
+                <dl id="frInfo">
+                    <dt><a href="#">가맹안내</a></dt>
+                </dl>
+                <dl id="faq">
+                    <dt><a href="#">FAQ</a></dt>
+                </dl>
+            </div>
         </section>
         <section id="store">
+            <h2 class="hidden">매장</h2>
             <div id="storeWrap">
-                <div id="location">
-                    <a href="#">매장찾기</a>
-                </div>
-                <div id="monStore">
-                    <a href="#">이달의 매장</a>
-                </div>
+                <dl id="location">
+                    <dt><a href="#">매장찾기</a></dt>
+                </dl>
+                <dl id="monStore">
+                    <dt><a href="#">이달의 매장</a></dt>
+                </dl>
+            </div>
+        </section>
+        <section id="customer">
+            <h2 class="hidden">커뮤니티</h2>
+            <div id="cusWrap">
+                <dl id="notice">
+                    <dt>notice</dt>
+                    <dd><a href="#">더보기</a></dd>
+                </dl>
+                <dl id="inquiry">
+                    <dt>고객의 소리</dt>
+                    <dd><a href="#">더보기</a></dd>
+                </dl>
+                <dl id="d">
+                    <dt>sns</dt>
+                    <dd><a href="#">더보기</a></dd>
+                </dl>
             </div>
         </section>
         <a href="#" id="topBtn">top버튼</a>
